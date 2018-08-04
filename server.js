@@ -53,6 +53,11 @@ app.get('/about', (req, res)=>{
     });
 });
 
+app.get('/buy', (req,res)=>{
+    res.render('buy.hbs', {
+        pagetitle:'Store'
+    })
+});
 
 app.get('/bad' , (req, res) =>{
     res.send({
