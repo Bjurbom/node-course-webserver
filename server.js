@@ -43,7 +43,7 @@ app.get('/', (req, res) =>{
    // res.send('<h1>Hello express!</h1>');
    res.render('index.hbs', {
     pagetitle: 'Home Page',
-    wm: "boi"
+    wm: "Detta är bara ett test på att se om det går att upptatera lätt"
 });
 });
 
