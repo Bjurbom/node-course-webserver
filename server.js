@@ -2,8 +2,8 @@ const express = require('express');
 const hbs = require('hbs');
 const fs = require('fs');
 
-//const port = process.env.PORT || 3000;
-const port = 3000;
+const port = process.env.PORT || 3000;
+
 
 var app =  express();
 
@@ -25,11 +25,14 @@ app.use((req,res,next) =>{
     next();
 });
 
+//maintenec tag for maintenec purposes
+/*
 app.use((req,res,next) =>{
     res.render('maintenec.hbs', {
         message: 'The website is down because Im working on it will be coming up sometime in the near future, stay tuned'
     });
 });
+*/
 
 app.use(express.static(__dirname + '/publc'));
 
